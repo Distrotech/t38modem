@@ -150,6 +150,8 @@ else
     OPENH323DIR=$(HOME)/openh323
   endif
 
+  STDCCFLAGS += -I$(OPENH323DIR)/include
+
   include $(OPENH323DIR)/openh323u.mak
 
   ifdef NO_PBOOLEAN
@@ -235,4 +237,3 @@ endif
 ifdef ALAW_132_BIT_REVERSE
   STDCCFLAGS += -DALAW_132_BIT_REVERSE
 endif
-
