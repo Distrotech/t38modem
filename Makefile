@@ -110,6 +110,7 @@
 #
 
 PROG		= t38modem
+LDLIBS		= -lstdc++ -lm
 SOURCES		:= pmutils.cxx dle.cxx pmodem.cxx pmodemi.cxx drivers.cxx \
 		   t30tone.cxx tone_gen.cxx hdlc.cxx t30.cxx fcs.cxx \
 		   pmodeme.cxx enginebase.cxx t38engine.cxx audio.cxx \
