@@ -1,0 +1,19 @@
+#!/bin/bash
+
+mkdir -p ${3}/usr/bin/
+if [ -d obj_linux_x86_64 ];then
+  cp obj_linux_x86_64/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_mips ];then
+  cp obj_linux_mips/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_mips64 ];then
+  cp obj_linux_mips64/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_ppc ];then
+  cp obj_linux_ppc/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_ppc64 ];then
+  cp obj_linux_ppc64/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_arm ];then
+  cp obj_linux_arm/t38modem ${3}/usr/bin/
+fi;
+
+rm -rf obj_linux*
+
