@@ -13,6 +13,10 @@ if [ -d obj_linux_x86_64 ];then
   cp obj_linux_ppc64/t38modem ${3}/usr/bin/
  elif [ -d obj_linux_arm ];then
   cp obj_linux_arm/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_arm ];then
+  cp obj_linux_arm/t38modem ${3}/usr/bin/
+ elif [ -d obj_linux_x86 ];then
+  cp obj_linux_x86/t38modem ${3}/usr/bin/
 fi;
 
 rm -rf obj_linux*
